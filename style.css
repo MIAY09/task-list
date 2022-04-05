@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Casual Contact';
+    src: url('Casual Contact.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Casual Contact';
+    background-color: rgb(19, 243, 150);
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+#task_list{
+    width: 600px;
+    min-height: 100vh;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 20px 25px 24px 0 rgba(0, 0, 0, 0.5);
+}
+#title{
+    font-size: 1.75rem;
+    text-align: center;
+}
+#input{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+#input i{
+    cursor: pointer;
+    font-size: 1.75rem;
+    color:rgb(59, 204, 240);
+    transform: scale(-1, 1);
+    margin-right: 15px;
+}
+#input input{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    border-bottom: 3px solid black;
+}
+#clear{
+    color: black !important;
+    margin-left: 15px;
+}
+#clear:hover{
+    transform: scale(1.6) rotate(20deg);
+}
+#all_items{
+    font-size: 1.5rem;
+    width: 75%;
+}
+@media(max-width:255px){
+    #title{
+        font-size: 1rem;
+    }
+}
+
+ 
